@@ -1,0 +1,10 @@
+{% extends 'Main.html' %}
+{% block body %}
+<center><h1 class="page-head">{{ page_head }}</h1>
+<h2 class="page-description">{{ description }}</h2></center>
+<br>
+<br>
+{% for data in LC_Data %}
+<h4>{{ data }}</h4>
+{% endfor %}
+{% endblock %}

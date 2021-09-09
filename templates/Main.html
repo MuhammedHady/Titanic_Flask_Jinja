@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+    <title> {{ title }} </title>
+</head>
+<Body>
+    {% block body %}
+    {% endblock %}
+    <center><h1><h1 style = font-size:150px class="page-head">{{ page_head }}</h1></h1>
+    <center><h2 style = font-size:50px class="page-description">{{ description }}</h2>
+    <br>
+    <br>
+    <p style = font-size:35px> (based on Python Progaraming Language) </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form method="POST" action="Survivors">  
+        <center>  <br> <input style="height:50px;width:200px" value="Check The Table of all Survivors" type="submit"/>  
+    </form> 
+    <br>
+    <form method="POST" action="Males" >  
+        <center> </center><br> <input style="height:50px;width:200px" value="Check The Table of all Males" type="submit" />
+    </form> 
+    <form method="POST" action="Females">  
+        <center> <br><input style="height:50px;width:200px" value="Check The Table of all Females" type="submit"/>  
+    </form> 
+    <br>
+    <form method="POST" action="Lost Childern">  
+        <center> <br> <input style="height:50px;width:200px" value="Check The Table of all Lost Childern" type="submit"/>  
+    </form> 
+    <br>
+    <form method="POST" action="Survivors Persentage">  
+        <center> <br> <input style="height:50px;width:200px" value="Check The Survivors Persentage" type="submit"/>  
+    </form> 
+    <br>
+    <br>
+    <br>
+    <p style="text-align:right" > Explore more Projects on Github : github.com/MuhammedHady </p>
+    <p style="text-align:right" > Find me on LinkedIn             : linkedin.com/in/muhammedhady/ </p>
+</body>
+</html>
